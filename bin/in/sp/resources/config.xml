@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--  <bean class="in.sp.beans.Ad" id="name">--><!--  use autowire="byName -->
+<!--  <bean class="in.sp.beans.Ad" id="kuch bhi id not depend">--><!--  use autowire="byType -->
+
+<bean class="in.sp.beans.Ad" id="dfa">
+      <constructor-arg value="my🤣🤣"/>
+       <constructor-arg value="pta ni 😂😂😂"/>
+</bean>
+
+<!--  <bean class="in.sp.beans.Student" id ="aa" autowire="byName">--><!--  use autowire="byName -->
+<!--  <bean class="in.sp.beans.Student" id ="aa" autowire="byType">--><!--  use autowire="byType -->
+<bean class="in.sp.beans.Student" id ="std" autowire="constructor">
+ 
+   <constructor-arg    ref="dfa" />
+     <constructor-arg    value="12232" />
+    <constructor-arg   value="kapol🤣🤣" />
+</bean>
+
+
+</beans>
